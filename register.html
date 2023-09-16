@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="description" content="Black Dragon Karate in Snowflake, AZ, led by a seasoned sensei with 30 years of experience, boasting 14 black belts across disciplines like Shorin Ryu, Ativism, Hawaiian Kenpo, and Polynesian Kenpo. Join us for unparalleled martial arts training.">
+    <title>Register - Black Dragon Karate</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .registration-form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='poweredBy' style='position: fixed; right: 0; bottom: 0; background-color: #0078D7; color: white; padding: 10px; z-index: 1000; border-top-left-radius: 10px; font-family: Roboto, sans-serif;'>
+        <span class='info-icon' style='margin-right: 5px; font-size: 1.2em;'>&#x2139;</span> Powered by <b><a href='https://converter.app' style='color: white;' target="_blank">Converter App</a></b>
+    </div>
+    <header>
+        <div class="horizontalContainer">
+            <img src="images/blackdragon.png" class="blackDragon" alt="Black Dragon Karate Logo">
+            <h1>Black Dragon Karate</h1>
+            <img src="images/blackdragon.png" class="blackDragon" alt="Black Dragon Karate Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="events.html">Events</a>
+            <a href="history.html">History</a>
+            <a href="shop.html">Shop</a>
+            <a href="register.html">Register</a>
+            <a href="contactus.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Register for Classes</h2>
+        <p>Fill out the form below to register for our classes. We'll get back to you with confirmation and further details.</p>
+        <div class="registration-form">
+            <form action="submit_registration.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="class">Select Class:</label>
+                <select id="class" name="class">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
