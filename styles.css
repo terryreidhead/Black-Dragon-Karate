@@ -8,10 +8,20 @@ body {
 }
 
 header {
+	/* display: flex; */
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     justify-content: center;
+	align-items: center;
+	position: relative;
+}
+header img[src = "images/sensiebryant.png"]{
+
+	 width: 250px; 
+	 height: 125px; 
+	 margin-left: 20px; 
+	 border-radius: 10px;
 }
 
 nav {
@@ -22,6 +32,8 @@ nav {
 }
 
 nav a {
+	display: flex;
+	justify-content: center;
     text-decoration: none;
     color: #fff;
 }
@@ -52,6 +64,10 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.floatLeftContatiner{
+	float: left;
+	margin-left: 20px;
 }
 
 .blackDragon {
@@ -149,3 +165,12 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.left{
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	transform: translateY(-50%)
+	
+}
+
