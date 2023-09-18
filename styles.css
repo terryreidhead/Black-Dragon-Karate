@@ -8,20 +8,23 @@ body {
 }
 
 header {
-	/* display: flex; */
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     justify-content: center;
-	align-items: center;
-	position: relative;
+    align-items: center;
+    position: relative;
 }
-header img[src = "images/sensiebryant.png"]{
 
-	 width: 250px; 
-	 height: 125px; 
-	 margin-left: 20px; 
-	 border-radius: 10px;
+header img[src="images/sensiebryant.png"] {
+    width: auto;  
+    height: 60%;  
+    margin-left: 2%;  
+    border-radius: 10px;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform:	translateY(-50%)
 }
 
 nav {
@@ -166,11 +169,19 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-.left{
-	position: absolute;
-	left: 10%;
-	top: 50%;
-	transform: translateY(-50%)
-	
+@media (max-width: 480px) {
+    header img[src="images/sensiebryant.png"] {
+        height: 30%;  
+    }
+
+    .horizontalContainer {
+        width: 100%;  
+        text-align: center;
+    }
+
+    nav a {
+        display: block;  
+        margin: 5px 0;
+    }
 }
 
