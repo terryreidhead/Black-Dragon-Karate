@@ -8,18 +8,20 @@ body {
 }
 
 header {
+	display: flex;
+	flex-direction: column;
+	height: 250px;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    justify-content: center;
+	justify-content: center;
     align-items: center;
     position: relative;
 }
 
 header img[src="images/sensiebryant.png"] {
-    width: auto;  
+	width: auto;  
     height: 60%;  
-    margin-left: 2%;  
+    margin-left: 0%;  
     border-radius: 10px;
 	position: absolute;
 	left: 5%;
@@ -27,9 +29,16 @@ header img[src="images/sensiebryant.png"] {
 	transform:	translateY(-50%)
 }
 
+header img[src="images/blackdragon.png"] {
+	height: 75%;
+	width: auto;
+}
+
 nav {
+	height: 45%;
     display: flex;
     justify-content: center;
+	align-items: center;
     gap: 20px;
     padding: 10px 0;
 }
@@ -63,21 +72,19 @@ button {
 }
 
 .horizontalContainer {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2%;
+	height: 75%;
 }
 .floatLeftContatiner{
 	float: left;
 	margin-left: 20px;
 }
 
-.blackDragon {
-    width: 75px;
-    height: 75px;
-    margin: 20px;
-}
+
 
 h1 {
     text-align: center;
