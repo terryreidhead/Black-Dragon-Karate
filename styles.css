@@ -30,17 +30,23 @@ header img[src="images/sensiebryant.png"] {
 }
 
 header img[src="images/blackdragon.png"] {
-	height: 75%;
+	height: 100%;
 	width: auto;
+	padding: 6px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 nav {
-	height: 45%;
-    display: flex;
+	position: absolute;
+	bottom: 5px;
+	display: flex;
     justify-content: center;
 	align-items: center;
     gap: 20px;
-    padding: 10px 0;
+    z-index: 1;
 }
 
 nav a {
@@ -72,12 +78,15 @@ button {
 }
 
 .horizontalContainer {
-	width: 65%;
+	width: 100;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 2%;
 	height: 75%;
+	z-index: 1;
+    position: relative;
 }
 .floatLeftContatiner{
 	float: left;
