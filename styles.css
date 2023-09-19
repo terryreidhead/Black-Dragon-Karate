@@ -202,7 +202,8 @@ input[type="submit"] {
 	}
 
     nav a {
-        display: block;  
+        display: flex;
+	    direction: column;
         margin: 5px 0;
     }
 }
