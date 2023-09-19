@@ -185,14 +185,16 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     header img[src="images/sensiebryant.png"] {
         height: 30%;  
     }
 
     .horizontalContainer {
-        width: 100%;  
+        width: 100%;
+		justify-content: center;
         text-align: center;
+		height: auto;
     }
 
     nav a {
