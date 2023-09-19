@@ -196,6 +196,10 @@ input[type="submit"] {
         text-align: center;
 		height: auto;
     }
+	
+	nav {
+		height: auto;
+	}
 
     nav a {
         display: block;  
